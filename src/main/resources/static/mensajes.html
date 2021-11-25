@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="cont-salones">
+        <h1 class="tittle mainr messa">Mensajes</h1>
+        <div class="selection-section">
+            <h1 class="title mainr">Selecciona el salon de fiesta</h1>
+            <select id="Seleccion" required aria-required>
+                <option value="">Selecciona un Salon de fiestas</option>
+            </select>
+            <h1 class="title mainr">Selecciona el cliente</h1>
+            <select id="Seleccion2" required aria-required>
+                <option value="">Selecciona un cliente</option>
+            </select>
+        </div>
+        <div class="add-salones">
+        <button id="Agregar">Agregar mensaje</button>
+        <div class="btn-message">
+            <button  id="Consultar">Consultar</button>
+        </div>
+        </div>
+        <div class="cont-mensajes">
+                <textarea name="" id="messagetext" cols="70" rows="34" minlength="1" maxlength="250"></textarea>
+        </div>
+    </div>
+    <div id="resultado"></div>
+    <div id="icon"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>    
+    <script src="js/mensajes.js"></script>
+    <script src="js/animacion.js"></script>
+</body>
+</html>
+

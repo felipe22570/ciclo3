@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Reservaciones</title>
+</head>
+<body>
+    
+    <div class="cont-reservations">
+        <h1 class="title mainr titleh1" id="mainReser">Reservaciones</h1>
+        <div>
+    <h1 class="title mainr">Fecha de comienzo</h1>
+        <div class="input-time">
+            <input id="start-day" type="date" min="2021-11-01" max="2050-12-31" placeholder="Ingresa la fecha">
+        </div>
+        <h1 class="title mainr">Fecha de salida</h1>
+        <div class="input-time">
+            <input id="departure-day" type="date" min="2021-11-01" max="2050-12-31" placeholder="Ingresa la fecha">
+            </div>
+        </div>
+        
+        <div class="sec-section">
+            <h1 class="title mainr">Cliente</h1>
+            <select id="combo-client">
+                    <option value="">Selecciona un Cliente</option>
+            </select>
+        </div>
+
+        <div class="section-score">
+            <div class="cont-buttons">
+            <button id="ConsultarCal">Consultar</button>
+            <button id="AgregarCal">Agregar</button>
+                </div>
+                <select id="Puntuacion">
+                    <option value="">Califica del 1 al 5</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+
+                <textarea name="" id="mensajecal" cols="10" rows="12"></textarea>
+
+                <h1 class="title mainr">Califica la reserva</h1>
+        </div>
+
+        <div class="third-section">
+            <h1 class="title mainr messa">Salon de fiesta</h1>
+                <select id="combo-partyroom">
+                    <option value="">Selecciona un Salon de fiestas</option>
+                </select>
+                
+                
+                <button id="Agregar">Agregar</button>
+                <button id="Consultar">Consultar</button>
+        </div>
+    </div>
+
+    <div id="resultado"></div>
+        <div id="icon"></div>
+        
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>    
+<script src="js/reservaciones.js"></script>
+<script src="js/animacion.js"></script>
+</body>
+</html>
