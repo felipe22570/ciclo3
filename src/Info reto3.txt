@@ -1,0 +1,4 @@
+IP pública incluido el frontend= http://168.138.133.81:8080/
+
+
+Nota: Se recomienda revisar el proyecto desde la IP pública ya que en el localhost a veces da problemas con los CORS de google
