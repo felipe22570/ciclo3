@@ -26,6 +26,8 @@ public class Score implements Serializable{
     @JoinColumn(name = "idReservation")
     @JsonIgnoreProperties("score")
     private Partyroom partyroom;
+    
+    
 
 
 

@@ -33,16 +33,6 @@ public class Messages implements Serializable{
     @JsonIgnoreProperties({"messages", "reservations"})
     private Client client;
 
-    
-    /*
-
-    public Messages(String messageText) {
-        this.messageText = messageText;
-    }
-    
-    
-    */
-    
 
     public Integer getIdMessage() {
         return idMessage;

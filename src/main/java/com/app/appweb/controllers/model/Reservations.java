@@ -40,58 +40,13 @@ public class Reservations implements Serializable{
     @JsonIgnoreProperties({"reservations", "messages"})
     private Client client;
     
-    @OneToMany(cascade = CascadeType.PERSIST)
-    @JoinColumn(name = "id")
-    @JsonIgnoreProperties("reservations")
-    private Set<Score> score = new HashSet<Score>();
+    //@OneToMany(cascade = CascadeType.PERSIST)
+    //@JoinColumn(name = "id")
+    //@JsonIgnoreProperties("reservations")
+    private String score;
+    //private Set<Score> score = new HashSet<Score>();
 
 
-    /*
-    Reservations(){
-
-    }
-
-    
-
-
-    public Reservations(String startDate, String devolutionDate) {
-        this.startDate = startDate;
-        this.devolutionDate = devolutionDate;
-    }
-
-    */
-
-
-    public Integer getIdReservation() {
-        return idReservation;
-    }
-
-
-    public void setIdReservation(Integer idReservations) {
-        this.idReservation = idReservations;
-    }
-
-    /*
-    public String getStartDate() {
-        return startDate;
-    }
-
-
-    public void setStartDate(String startDate) {
-        this.startDate = startDate;
-    }
-
-
-    public String getDevolutionDate() {
-        return devolutionDate;
-    }
-
-
-    public void setDevolutionDate(String devolutionDate) {
-        this.devolutionDate = devolutionDate;
-    }
-
-    */
     
     public String getStatus() {
         return status;
@@ -138,12 +93,30 @@ public class Reservations implements Serializable{
     public void setDevolutionDate(Date devolutionDate) {
         this.devolutionDate = devolutionDate;
     }
-
+    
+    /*
     public Set<Score> getScore() {
         return score;
     }
 
     public void setScore(Set<Score> score) {
+        this.score = score;
+    }
+    */
+
+    public Integer getIdReservation() {
+        return idReservation;
+    }
+
+    public void setIdReservation(Integer idReservation) {
+        this.idReservation = idReservation;
+    }
+
+    public String getScore() {
+        return score;
+    }
+
+    public void setScore(String score) {
         this.score = score;
     }
 

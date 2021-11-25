@@ -32,29 +32,17 @@ public class Category implements Serializable{
     @JoinColumn(name = "id")
     @JsonIgnoreProperties("category")
     private Set<Partyroom> partyrooms = new HashSet<Partyroom>();
-    
-    /*
-    Category(){
-        
-    }
-*/
+   
 
-    public Set<Partyroom> getPartyroom() {
+    public Set<Partyroom> getPartyrooms() {
         return partyrooms;
     }
 
 
-    public void setPartyroom(Set<Partyroom> partyroom) {
-        this.partyrooms = partyroom;
+    public void setPartyrooms(Set<Partyroom> partyrooms) {
+        this.partyrooms = partyrooms;
     }
 
-
-    /*
-    public Category(String name, String description) {
-        this.name = name;
-        this.description = description;
-    }
-    */
 
     public Integer getId() {
         return id;

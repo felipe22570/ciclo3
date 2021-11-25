@@ -29,7 +29,7 @@ public class Partyroom implements Serializable{
     
     @ManyToOne
     @JoinColumn(name="categoryId")
-    @JsonIgnoreProperties({"partyroom"})
+    @JsonIgnoreProperties({"partyrooms"})
     private Category category;
     
     @OneToMany(cascade={CascadeType.PERSIST},mappedBy ="partyroom")
@@ -40,19 +40,7 @@ public class Partyroom implements Serializable{
     @JsonIgnoreProperties({"partyroom","message"})
     private List<Reservations> reservations;
     
-    /*
-    Partyroom(){
-
-    }
-
-    public Partyroom(String owner, int capacity,Category category, String name, String description) {
-        this.owner = owner;
-        this.capacity = capacity;
-        this.name = name;
-        this.description = description;
-    }
-    */
-
+   
     public Integer getId() {
         return id;
     }
